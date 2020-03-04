@@ -1,0 +1,370 @@
+[
+	{
+		"num_code": "8",
+		"alpha_2_code": "AL",
+		"alpha_3_code": "ALB",
+		"en_short_name": "Albania",
+		"nationality": "Albanian",
+		"dial_code": "+355"
+	},
+	{
+		"num_code": "20",
+		"alpha_2_code": "AD",
+		"alpha_3_code": "AND",
+		"en_short_name": "Andorra",
+		"nationality": "Andorran",
+		"dial_code": "+376"
+	},
+	{
+		"num_code": "40",
+		"alpha_2_code": "AT",
+		"alpha_3_code": "AUT",
+		"en_short_name": "Austria",
+		"nationality": "Austrian",
+		"dial_code": "+43"
+	},
+	{
+		"num_code": "112",
+		"alpha_2_code": "BY",
+		"alpha_3_code": "BLR",
+		"en_short_name": "Belarus",
+		"nationality": "Belarusian",
+		"dial_code": "+375"
+	},
+	{
+		"num_code": "56",
+		"alpha_2_code": "BE",
+		"alpha_3_code": "BEL",
+		"en_short_name": "Belgium",
+		"nationality": "Belgian",
+		"dial_code": "+32"
+	},
+	{
+		"num_code": "70",
+		"alpha_2_code": "BA",
+		"alpha_3_code": "BIH",
+		"en_short_name": "Bosnia and Herzegovina",
+		"nationality": "Bosnian or Herzegovinian",
+		"dial_code": "+387"
+	},
+	{
+		"num_code": "100",
+		"alpha_2_code": "BG",
+		"alpha_3_code": "BGR",
+		"en_short_name": "Bulgaria",
+		"nationality": "Bulgarian",
+		"dial_code": "+359"
+	},
+	{
+		"num_code": "191",
+		"alpha_2_code": "HR",
+		"alpha_3_code": "HRV",
+		"en_short_name": "Croatia",
+		"nationality": "Croatian",
+		"dial_code": "+385"
+	},
+	{
+		"num_code": "196",
+		"alpha_2_code": "CY",
+		"alpha_3_code": "CYP",
+		"en_short_name": "Cyprus",
+		"nationality": "Cypriot",
+		"dial_code": "+357"
+	},
+	{
+		"num_code": "203",
+		"alpha_2_code": "CZ",
+		"alpha_3_code": "CZE",
+		"en_short_name": "Czech Republic",
+		"nationality": "Czech",
+		"dial_code": "+420"
+	},
+	{
+		"num_code": "208",
+		"alpha_2_code": "DK",
+		"alpha_3_code": "DNK",
+		"en_short_name": "Denmark",
+		"nationality": "Danish",
+		"dial_code": "+45"
+	},
+	{
+		"num_code": "233",
+		"alpha_2_code": "EE",
+		"alpha_3_code": "EST",
+		"en_short_name": "Estonia",
+		"nationality": "Estonian",
+		"dial_code": "+372"
+	},
+	{
+		"num_code": "246",
+		"alpha_2_code": "FI",
+		"alpha_3_code": "FIN",
+		"en_short_name": "Finland",
+		"nationality": "Finnish",
+		"dial_code": "+358"
+	},
+	{
+		"num_code": "250",
+		"alpha_2_code": "FR",
+		"alpha_3_code": "FRA",
+		"en_short_name": "France",
+		"nationality": "French",
+		"dial_code": "+33"
+	},
+	{
+		"num_code": "276",
+		"alpha_2_code": "DE",
+		"alpha_3_code": "DEU",
+		"en_short_name": "Germany",
+		"nationality": "German",
+		"dial_code": "+49"
+	},
+	{
+		"num_code": "300",
+		"alpha_2_code": "GR",
+		"alpha_3_code": "GRC",
+		"en_short_name": "Greece",
+		"nationality": "Greek, Hellenic",
+		"dial_code": "+30"
+	},
+	{
+		"num_code": "348",
+		"alpha_2_code": "HU",
+		"alpha_3_code": "HUN",
+		"en_short_name": "Hungary",
+		"nationality": "Hungarian, Magyar",
+		"dial_code": "+36"
+	},
+	{
+		"num_code": "352",
+		"alpha_2_code": "IS",
+		"alpha_3_code": "ISL",
+		"en_short_name": "Iceland",
+		"nationality": "Icelandic",
+		"dial_code": "+354"
+	},
+	{
+		"num_code": "372",
+		"alpha_2_code": "IE",
+		"alpha_3_code": "IRL",
+		"en_short_name": "Ireland",
+		"nationality": "Irish",
+		"dial_code": "+353"
+	},
+	{
+		"num_code": "380",
+		"alpha_2_code": "IT",
+		"alpha_3_code": "ITA",
+		"en_short_name": "Italy",
+		"nationality": "Italian",
+		"dial_code": "+39"
+	},
+	{
+		"num_code": "428",
+		"alpha_2_code": "LV",
+		"alpha_3_code": "LVA",
+		"en_short_name": "Latvia",
+		"nationality": "Latvian",
+		"dial_code": "+371"
+	},
+	{
+		"num_code": "438",
+		"alpha_2_code": "LI",
+		"alpha_3_code": "LIE",
+		"en_short_name": "Liechtenstein",
+		"nationality": "Liechtenstein",
+		"dial_code": "+423"
+	},
+	{
+		"num_code": "440",
+		"alpha_2_code": "LT",
+		"alpha_3_code": "LTU",
+		"en_short_name": "Lithuania",
+		"nationality": "Lithuanian",
+		"dial_code": "+370"
+	},
+	{
+		"num_code": "442",
+		"alpha_2_code": "LU",
+		"alpha_3_code": "LUX",
+		"en_short_name": "Luxembourg",
+		"nationality": "Luxembourg, Luxembourgish",
+		"dial_code": "+352"
+	},
+	{
+		"num_code": "470",
+		"alpha_2_code": "MT",
+		"alpha_3_code": "MLT",
+		"en_short_name": "Malta",
+		"nationality": "Maltese",
+		"dial_code": "+356"
+	},
+	{
+		"num_code": "498",
+		"alpha_2_code": "MD",
+		"alpha_3_code": "MDA",
+		"en_short_name": "Moldova (Republic of)",
+		"nationality": "Moldovan",
+		"dial_code": "+373"
+	},
+	{
+		"num_code": "492",
+		"alpha_2_code": "MC",
+		"alpha_3_code": "MCO",
+		"en_short_name": "Monaco",
+		"nationality": "Monégasque, Monacan",
+		"dial_code": "+377"
+	},
+	{
+		"num_code": "499",
+		"alpha_2_code": "ME",
+		"alpha_3_code": "MNE",
+		"en_short_name": "Montenegro",
+		"nationality": "Montenegrin",
+		"dial_code": "+382"
+	},
+	{
+		"num_code": "528",
+		"alpha_2_code": "NL",
+		"alpha_3_code": "NLD",
+		"en_short_name": "Netherlands",
+		"nationality": "Dutch, Netherlandic",
+		"dial_code": "+31"
+	},
+	{
+		"num_code": "807",
+		"alpha_2_code": "MK",
+		"alpha_3_code": "MKD",
+		"en_short_name": "North Macedonia",
+		"nationality": "North Macedonian",
+		"dial_code": "+389"
+	},
+	{
+		"num_code": "578",
+		"alpha_2_code": "NO",
+		"alpha_3_code": "NOR",
+		"en_short_name": "Norway",
+		"nationality": "Norwegian",
+		"dial_code": "+47"
+	},
+	{
+		"num_code": "616",
+		"alpha_2_code": "PL",
+		"alpha_3_code": "POL",
+		"en_short_name": "Poland",
+		"nationality": "Polish",
+		"dial_code": "+48"
+	},
+	{
+		"num_code": "620",
+		"alpha_2_code": "PT",
+		"alpha_3_code": "PRT",
+		"en_short_name": "Portugal",
+		"nationality": "Portuguese",
+		"dial_code": "+351"
+	},
+	{
+		"num_code": "642",
+		"alpha_2_code": "RO",
+		"alpha_3_code": "ROU",
+		"en_short_name": "Romania",
+		"nationality": "Romanian",
+		"dial_code": "+40"
+	},
+	{
+		"num_code": "643",
+		"alpha_2_code": "RU",
+		"alpha_3_code": "RUS",
+		"en_short_name": "Russia",
+		"nationality": "Russian",
+		"dial_code": "+7"
+	},
+	{
+		"num_code": "674",
+		"alpha_2_code": "SM",
+		"alpha_3_code": "SMR",
+		"en_short_name": "San Marino",
+		"nationality": "Sammarinese",
+		"dial_code": "+378"
+	},
+	{
+		"num_code": "688",
+		"alpha_2_code": "RS",
+		"alpha_3_code": "SRB",
+		"en_short_name": "Serbia",
+		"nationality": "Serbian",
+		"dial_code": "+381"
+	},
+	{
+		"num_code": "703",
+		"alpha_2_code": "SK",
+		"alpha_3_code": "SVK",
+		"en_short_name": "Slovakia",
+		"nationality": "Slovak",
+		"dial_code": "+421"
+	},
+	{
+		"num_code": "705",
+		"alpha_2_code": "SI",
+		"alpha_3_code": "SVN",
+		"en_short_name": "Slovenia",
+		"nationality": "Slovenian, Slovene",
+		"dial_code": "+386"
+	},
+	{
+		"num_code": "724",
+		"alpha_2_code": "ES",
+		"alpha_3_code": "ESP",
+		"en_short_name": "Spain",
+		"nationality": "Spanish",
+		"dial_code": "+34"
+	},
+	{
+		"num_code": "752",
+		"alpha_2_code": "SE",
+		"alpha_3_code": "SWE",
+		"en_short_name": "Sweden",
+		"nationality": "Swedish",
+		"dial_code": "+46"
+	},
+	{
+		"num_code": "756",
+		"alpha_2_code": "CH",
+		"alpha_3_code": "CHE",
+		"en_short_name": "Switzerland",
+		"nationality": "Swiss",
+		"dial_code": "+41"
+	},
+	{
+		"num_code": "792",
+		"alpha_2_code": "TR",
+		"alpha_3_code": "TUR",
+		"en_short_name": "Turkey",
+		"nationality": "Turkish",
+		"dial_code": "+90"
+	},
+	{
+		"num_code": "804",
+		"alpha_2_code": "UA",
+		"alpha_3_code": "UKR",
+		"en_short_name": "Ukraine",
+		"nationality": "Ukrainian",
+		"dial_code": "+380"
+	},
+	{
+		"num_code": "826",
+		"alpha_2_code": "GB",
+		"alpha_3_code": "GBR",
+		"en_short_name": "United Kingdom of Great Britain and Northern Ireland",
+		"nationality": "British, UK",
+		"dial_code": "+44"
+	},
+	{
+		"num_code": "336",
+		"alpha_2_code": "VA",
+		"alpha_3_code": "VAT",
+		"en_short_name": "Vatican City State",
+		"nationality": "Vatican",
+		"dial_code": "+379"
+	}
+]

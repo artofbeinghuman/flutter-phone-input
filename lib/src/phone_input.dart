@@ -9,7 +9,7 @@ import 'country.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class InternationalPhoneInput extends StatefulWidget {
+class PhoneInput extends StatefulWidget {
   final void Function(String phoneNumber, String internationalizedPhoneNumber,
       String isoCode) onPhoneNumberChange;
   final String initialPhoneNumber;
@@ -19,27 +19,31 @@ class InternationalPhoneInput extends StatefulWidget {
   final TextStyle errorStyle;
   final TextStyle hintStyle;
   final int errorMaxLines;
+  final Function onSubmitted;
+  final bool europeanCountriesOnly;
 
-  InternationalPhoneInput(
-      {this.onPhoneNumberChange,
-      this.initialPhoneNumber,
-      this.initialSelection,
-      this.errorText,
-      this.hintText,
-      this.errorStyle,
-      this.hintStyle,
-      this.errorMaxLines});
+  PhoneInput({
+    this.onPhoneNumberChange,
+    this.initialPhoneNumber,
+    this.initialSelection,
+    this.errorText,
+    this.hintText,
+    this.errorStyle,
+    this.hintStyle,
+    this.errorMaxLines,
+    this.onSubmitted,
+    this.europeanCountriesOnly = false,
+  });
 
   static Future<String> internationalizeNumber(String number, String iso) {
     return PhoneService.getNormalizedPhoneNumber(number, iso);
   }
 
   @override
-  _InternationalPhoneInputState createState() =>
-      _InternationalPhoneInputState();
+  _PhoneInputState createState() => _PhoneInputState();
 }
 
-class _InternationalPhoneInputState extends State<InternationalPhoneInput> {
+class _PhoneInputState extends State<PhoneInput> {
   Country selectedItem;
   List<Country> itemList = [];
 
@@ -53,7 +57,7 @@ class _InternationalPhoneInputState extends State<InternationalPhoneInput> {
 
   bool hasError = false;
 
-  _InternationalPhoneInputState();
+  _PhoneInputState();
 
   final phoneTextController = TextEditingController();
 
@@ -115,9 +119,14 @@ class _InternationalPhoneInputState extends State<InternationalPhoneInput> {
   }
 
   Future<List<Country>> _fetchCountryData() async {
-    var list = await DefaultAssetBundle.of(context)
-        .loadString('packages/international_phone_input/assets/countries.json');
+    var list = widget.europeanCountriesOnly
+        ? await DefaultAssetBundle.of(context).loadString(
+            'packages/international_phone_input/assets/countries.json')
+        : await DefaultAssetBundle.of(context).loadString(
+            'packages/international_phone_input/assets/countries_europe.json');
     var jsonList = json.decode(list);
+    jsonList.sort(
+        (a, b) => Map.from(a)['dial_code'].compareTo(Map.from(b)['dial_code']));
     List<Country> elements = [];
     jsonList.forEach((s) {
       Map elem = Map.from(s);
@@ -133,6 +142,7 @@ class _InternationalPhoneInputState extends State<InternationalPhoneInput> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
@@ -172,6 +182,7 @@ class _InternationalPhoneInputState extends State<InternationalPhoneInput> {
           ),
           Flexible(
               child: TextField(
+            onSubmitted: widget.onSubmitted,
             keyboardType: TextInputType.phone,
             controller: phoneTextController,
             decoration: InputDecoration(
