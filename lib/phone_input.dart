@@ -109,9 +109,10 @@ class _PhoneInputState extends State<PhoneInput> {
     });
 
     String phoneText = phoneTextController.text;
-    bool isValid = _parsePhoneNumber(phoneText, widget.initialSelection);
-    _getNormalizedPhoneNumber(phoneText, selectedItem.code).then((number) {
-      widget.returnPhoneInputStatus(isValid, number);
+    _parsePhoneNumber(phoneText, widget.initialSelection).then((isValid) {
+      _getNormalizedPhoneNumber(phoneText, selectedItem.code).then((number) {
+        widget.returnPhoneInputStatus(isValid, number);
+      });
     });
 
     super.initState();
