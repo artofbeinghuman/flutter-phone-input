@@ -34,6 +34,7 @@ class PhoneInput extends StatefulWidget {
   final String initialSelection;
   final String errorText;
   final String hintText;
+  final TextStyle textStyle;
   final TextStyle errorStyle;
   final TextStyle hintStyle;
   final int errorMaxLines;
@@ -42,10 +43,11 @@ class PhoneInput extends StatefulWidget {
 
   PhoneInput({
     this.returnPhoneInputStatus,
-    this.initialPhoneNumber,
+    this.initialPhoneNumber = '',
     this.initialSelection,
     this.errorText,
     this.hintText,
+    this.textStyle,
     this.errorStyle,
     this.hintStyle,
     this.errorMaxLines,
@@ -104,6 +106,12 @@ class _PhoneInputState extends State<PhoneInput> {
         itemList = list;
         selectedItem = preSelectedItem;
       });
+    });
+
+    String phoneText = phoneTextController.text;
+    bool isValid = _parsePhoneNumber(phoneText, widget.initialSelection);
+    _getNormalizedPhoneNumber(phoneText, selectedItem.code).then((number) {
+      widget.returnPhoneInputStatus(isValid, number);
     });
 
     super.initState();
@@ -209,7 +217,7 @@ class _PhoneInputState extends State<PhoneInput> {
                             package: 'phone_input',
                           ),
                           SizedBox(width: 4),
-                          Text(value.dialCode)
+                          Text(value.dialCode, style: widget.textStyle)
                         ],
                       ),
                     ),
@@ -221,6 +229,7 @@ class _PhoneInputState extends State<PhoneInput> {
           SizedBox(width: 5),
           Flexible(
               child: TextField(
+            style: widget.textStyle,
             onSubmitted: widget.onSubmitted,
             keyboardType: TextInputType.phone,
             controller: phoneTextController,
