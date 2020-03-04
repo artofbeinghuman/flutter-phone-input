@@ -26,6 +26,7 @@ flutter:
 
   assets:
     - assets/countries.json
+    - assets/countries_europe.json
     - assets/flags/tg.png
     - assets/flags/me.png
     - assets/flags/la.png

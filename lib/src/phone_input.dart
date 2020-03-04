@@ -1,4 +1,4 @@
-//library international_phone_input;
+//library phone_input;
 
 import 'dart:async';
 import 'dart:convert';
@@ -120,13 +120,13 @@ class _PhoneInputState extends State<PhoneInput> {
 
   Future<List<Country>> _fetchCountryData() async {
     var list = widget.europeanCountriesOnly
-        ? await DefaultAssetBundle.of(context).loadString(
-            'packages/international_phone_input/assets/countries.json')
-        : await DefaultAssetBundle.of(context).loadString(
-            'packages/international_phone_input/assets/countries_europe.json');
+        ? await DefaultAssetBundle.of(context)
+            .loadString('packages/phone_input/assets/countries.json')
+        : await DefaultAssetBundle.of(context)
+            .loadString('packages/phone_input/assets/countries_europe.json');
     var jsonList = json.decode(list);
-    jsonList.sort(
-        (a, b) => Map.from(a)['dial_code'].compareTo(Map.from(b)['dial_code']));
+    // jsonList.sort(
+    //     (a, b) => Map.from(a)['dial_code'].compareTo(Map.from(b)['dial_code']));
     List<Country> elements = [];
     jsonList.forEach((s) {
       Map elem = Map.from(s);
@@ -166,9 +166,10 @@ class _PhoneInputState extends State<PhoneInput> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           Image.asset(
-                            value.flagUri,
+                            'assets/logo.png',
+                            // value.flagUri,
                             width: 32.0,
-                            package: 'international_phone_input',
+                            // package: 'phone_input',
                           ),
                           SizedBox(width: 4),
                           Text(value.dialCode)
