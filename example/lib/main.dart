@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:international_phone_input/international_phone_input.dart';
+import 'package:phone_input/phone_input.dart';
 
 void main() => runApp(MyApp());
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:international_phone_input/src/country.dart';
-import 'package:international_phone_input/src/phone_service.dart';
+import 'package:phone_input/src/country.dart';
+import 'package:phone_input/src/phone_service.dart';
 
 class InternationalPhoneInputText extends StatefulWidget {
   final Function(

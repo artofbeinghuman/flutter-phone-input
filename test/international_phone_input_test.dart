@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:international_phone_input/src/international_phone_input.dart';
+import 'package:phone_input/src/phone_input.dart';
 
 void main() {
   test('validates phone number input value', () {

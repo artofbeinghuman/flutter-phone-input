@@ -3,7 +3,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:international_phone_input/src/phone_service.dart';
+import 'package:phone_input/src/phone_service.dart';
 
 import 'country.dart';
 import 'package:flutter/material.dart';

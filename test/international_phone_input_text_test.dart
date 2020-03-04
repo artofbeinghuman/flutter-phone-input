@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:international_phone_input/international_phone_input.dart';
+import 'package:phone_input/phone_input.dart';
 
 // NOTE: the test pass using flutter test, but pub test will fail due to a dart error
 void main() {

@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:international_phone_input/src/country.dart';
+import 'package:phone_input/src/country.dart';
 import 'package:libphonenumber/libphonenumber.dart';
 import 'package:flutter/services.dart';
 
