@@ -60,7 +60,14 @@ class PhoneInput extends StatefulWidget {
 }
 
 class _PhoneInputState extends State<PhoneInput> {
-  Country selectedItem;
+  // setting immediatly, since there is an error on first build of the widget,
+  // when _validatePhoneNumber() is called
+  Country selectedItem = Country(
+      name: "Germany",
+      code: "DE",
+      dialCode: "+49",
+      flagUri: 'assets/flags/DE.png');
+
   List<Country> itemList = [];
 
   String errorText;
